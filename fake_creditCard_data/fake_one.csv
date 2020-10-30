@@ -1,0 +1,19 @@
+Date,Transaction Type,Check Number,Description,Amount
+11/10/2019,Debit,,Description Purchase 1,$100.00 
+11/11/2019,Debit,,Description Purchase 2,$2 
+11/13/2019,Debit,,Description Purchase 3,"$1,545.00 "
+11/13/2019,Debit,,Description Purchase 4,$66.00 
+11/15/2019,Debit,,Description Purchase 5,$22.00 
+11/17/2019,Debit,,Description Purchase 6,$11.00 
+11/17/2019,Debit,,Description Purchase 7,$11.00 
+11/18/2019,Debit,,Description Purchase 8,$11.00 
+11/18/2019,Debit,,Description Purchase 9,$11.00 
+11/18/2019,Debit,,Description Purchase 10,$11.00 
+11/22/2019,Debit,,Description Purchase 11,$11.00 
+11/24/2019,Debit,,Description Purchase 12,$11.00 
+11/27/2019,Debit,,Description Purchase 13,$11.00 
+12/1/2019,Debit,,Description Purchase 14,$11.00 
+12/3/2019,Credit,,Description Purchase 15,"($1,000.00)"
+12/3/2019,Debit,,Description Purchase 16,$11.00 
+12/5/2019,Debit,,Description Purchase 17,$11.00 
+12/8/2019,Debit,,Description Purchase 18,$11.00 

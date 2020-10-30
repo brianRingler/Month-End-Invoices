@@ -1,0 +1,6 @@
+Date,Transaction Type,Check Number,Description,Amount
+11/17/2019,Debit,,From file 3 Description,$2 
+11/21/2019,Debit,,From file 3 Description,$5 
+11/27/2019,Debit,,From file 3 Description,$22.00 
+11/27/2019,Debit,,From file 3 Description,$111.00 
+12/3/2019,Credit,,From file 3 Description,$44.00 
