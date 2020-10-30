@@ -49,8 +49,6 @@ for company in company_names:
             send_email_outlook(to, sub, body, path)
             emails_sent += 1
 
-print(emails_sent)
-print(invoice_count)
 
 
 
