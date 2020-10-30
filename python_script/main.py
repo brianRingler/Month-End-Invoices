@@ -1,21 +1,25 @@
 import pandas as pd
 from outlookSend import send_email_outlook
 import os
-
-
-# Path to the master Excel file
-path_master = r'C:\_Excel_Examples\Expense_Report\excel_file'
-# Path to folder with all invoices to be sent
-path_invoices = r'C:\_Excel_Examples\Expense_Report\invoices'
+import xlwings as xw
 
 # name master Excel file 
-file_name_master = r'\expense_report_app_v03_00.xlsm'
+file_name_master = xw.books.active.name
+# Path to master file which includes name used for pandas
+full_path = xw.Book(file_name_master).fullname
+
+
+# Path to folder with all invoices to be sent
+wb = xw.Book(file_name_master)
+sht = wb.sheets['FILE_PATHS']
+path_invoices = sht.range('F1').value
+
 
 # ExcelFile class
 '''
 To facilitate working with multiple sheets from the same file, the ExcelFile class can be used to wrap the file and can be passed into read_excel There will be a performance benefit for reading multiple sheets as the file is read into memory only once.
 '''
-xlsm = pd.ExcelFile(path_master + file_name_master)
+xlsm = pd.ExcelFile(full_path)
 
 # Passing the path and name of Workbook and the sheet name we want to import
 # read id data from the sheet named "DATA"
