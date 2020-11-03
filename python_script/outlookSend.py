@@ -2,12 +2,12 @@ import win32com.client as win32
 
 def send_email_outlook(to, sub, body, path=""):
     '''
-    Data will imported from Excel file into Pandas to populate outgoing emails. The Sender will be the Outlook account on the local machine running the Invoice Program
+    Data will be imported from Excel file into Pandas to populate outgoing emails. The Sender will be the Outlook account on the local machine running the Invoice Program
     * Using Outlook to send emails. 
     * to: The individual receiving the email
     * sub: Is the subject of the email 
     * body: The body of the email (HTML can be added)
-    * path: Path to the attachment plus file name will end path
+    * path: Path to the attachment plus file name
     '''
 
     outlook = win32.Dispatch('outlook.application')
